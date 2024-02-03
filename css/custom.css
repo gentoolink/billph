@@ -53,3 +53,17 @@ button.btn:hover {
         max-height: 300px; /* Smaller height on small screens */
     }
 }
+
+.text-under-carousel {
+    padding: 20px; /* Add some space around the text */
+    text-align: center; /* Center the text, if that's your design */
+    background-color: #f8f9fa; /* Optional: if you want a different background */
+    margin-top: 5px; /* Optional: to remove any space between carousel and text */
+}
+
+@media (max-width: 768px) {
+    .text-under-carousel {
+        padding: 10px; /* Less padding on smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
