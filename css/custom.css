@@ -1,0 +1,69 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #spinningWrench {
+    display: inline-block;
+    font-size: 4rem; /* Adjust size as needed */
+    color: #47515c; /* Adjust color as needed */
+    animation: spin 5s linear infinite;
+  }
+  
+/* Customize form inputs */
+input.form-control, textarea.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+}
+
+/* Customize form labels */
+.form-label {
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+/* Customize submit button */
+button.btn {
+    background-color: #111010;
+    border-color: #757373;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+@media (min-width: 768px) { /* Adjusts styles for screens larger than 768px */
+    .contact-form {
+        padding-right: 15px; /* Adds spacing to the right of the form */
+    }
+    .logo-container {
+        padding-left: 15px; /* Adds spacing to the left of the logo */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item {
+        max-height: 300px; /* Smaller height on small screens */
+    }
+}
+
+.text-under-carousel {
+    padding: 20px; /* Add some space around the text */
+    text-align: center; /* Center the text, if that's your design */
+    background-color: #f8f9fa; /* Optional: if you want a different background */
+    margin-top: 5px; /* Optional: to remove any space between carousel and text */
+}
+
+@media (max-width: 768px) {
+    .text-under-carousel {
+        padding: 10px; /* Less padding on smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
