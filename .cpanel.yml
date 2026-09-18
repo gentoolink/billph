@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/billsplumbi/public_html
-    - /bin/rsync -avz --delete --exclude '.git/' ./ $DEPLOYPATH/
