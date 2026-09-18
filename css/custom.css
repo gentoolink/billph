@@ -93,3 +93,8 @@
 .credentials li:last-child {
     border-bottom: 0;
 }
+
+/* Secondary page header */
+.page-lead {
+    max-width: 48rem;
+}
