@@ -10,32 +10,38 @@
     animation: spin 5s linear infinite;
   }
   
-/* Customize form inputs */
-input.form-control, textarea.form-control {
+/* Contact form */
+.contact-form .form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.35rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
     border-radius: 0.5rem;
     border: 1px solid #ced4da;
+    font-size: 1rem;
 }
 
-/* Customize form labels */
-.form-label {
-    font-weight: bold;
-    color: #495057;
-    margin-bottom: 0.5rem;
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
 }
 
-/* Customize submit button */
-button.btn {
-    background-color: #111010;
-    border-color: #757373;
-    padding: 10px 20px;
-    font-size: 2rem;
+.contact-form .btn {
+    font-weight: 600;
     border-radius: 0.5rem;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
-button.btn:hover {
-    background-color: #0056b3;
-    color: #fff;
+.contact-form .btn:hover {
+    transform: translateY(-1px);
+}
+
+.contact-info a:hover {
+    text-decoration: underline !important;
 }
 
 @media (min-width: 768px) { /* Adjusts styles for screens larger than 768px */
@@ -66,4 +72,9 @@ button.btn:hover {
         padding: 10px; /* Less padding on smaller screens */
         font-size: 14px; /* Smaller font size for smaller screens */
     }
+}
+
+/* Keep anchored sections clear of the sticky navbar */
+#home, #services, #geothermal, #about, #contact {
+    scroll-margin-top: 90px;
 }

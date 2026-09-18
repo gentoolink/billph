@@ -246,6 +246,8 @@
     <a class="btn btn-danger" href="tel:236-255-2747" role="button">Call Now</a>
   </p>
 </div>
+</div>
+<!--End of Home-->
 
 
 
@@ -369,7 +371,7 @@
 <!--Start of geo thermal-->
 <div id="geothermal" class="container pt-5 bg-light">
   <div class="row justify-content-center"> <!-- Ensure row centers its children -->
-    <div class="col-12 col-md-10 col-lg-8 mx-auto"> <!-- Adjust column sizes and auto margins -->
+    <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
       <h2 id="geothermal-heading">Geo Thermal Heating</h2> <!-- Updated ID for uniqueness -->
       
       <h4>Maintenance</h4><br>
@@ -418,33 +420,111 @@
 </div>
 <!--End of Mission page-->
 
-<div id="contact" class="container-fluid pt-5 px-4 bg-light">
-    <div class="col-sm-12 slideanim">
-      <h3><strong>Contact Us</strong></h3>
-      <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact">
-        <p class="d-none">
-          <label>Don't fill this out if you're human: <input name="bot-field"></label>
-        </p>
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-          </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-          </div>
-        </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Send us a message! Or call or text us at 236-255-2747" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-lg float-end bg-danger" type="submit">Send</button>
-          </div>
-        </div>
-      </form>
+<div id="contact" class="container-fluid py-5 px-4 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Contact Us</h2>
+      <p class="lead text-muted mb-0">Request a quote or ask a question. We usually reply within one business day.</p>
     </div>
+
+    <div class="row g-4 align-items-stretch slideanim">
+
+      <!-- Contact details -->
+      <div class="col-lg-4">
+        <div class="card h-100 border-0 shadow-sm bg-primary text-white contact-info">
+          <div class="card-body p-4 p-lg-5">
+            <h3 class="h4 mb-4">Get in touch</h3>
+
+            <div class="d-flex mb-4">
+              <i class="bi bi-telephone-fill fs-3 me-3" aria-hidden="true"></i>
+              <div>
+                <div class="small text-uppercase opacity-75">Call or text</div>
+                <a class="text-white fw-bold text-decoration-none fs-5" href="tel:236-255-2747">236-255-2747</a>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <i class="bi bi-clock-fill fs-3 me-3" aria-hidden="true"></i>
+              <div>
+                <div class="small text-uppercase opacity-75">Hours</div>
+                <div>Monday to Friday<br>8:00 am to 5:00 pm</div>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <i class="bi bi-geo-alt-fill fs-3 me-3" aria-hidden="true"></i>
+              <div>
+                <div class="small text-uppercase opacity-75">Service area</div>
+                <div>Vanderhoof, Fort St. James<br>and Prince George, BC</div>
+              </div>
+            </div>
+
+            <hr class="border-white opacity-50">
+            <div class="d-flex align-items-center">
+              <span class="me-3">Follow us</span>
+              <a class="text-white fs-4 me-3" href="https://www.facebook.com/100089593513567" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a class="text-white fs-4" href="https://ca.linkedin.com/in/william-teichroeb-4a1b8230" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="col-lg-8">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4 p-lg-5">
+            <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+              <input type="hidden" name="form-name" value="contact">
+              <p class="d-none">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+              </p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-lg" id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input class="form-control form-control-lg" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="250-555-0123">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-lg" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="service" class="form-label">What do you need help with?</label>
+                  <select class="form-select form-select-lg" id="service" name="service">
+                    <option value="" selected>Select a service</option>
+                    <option>Plumbing repair or installation</option>
+                    <option>Furnace or heating</option>
+                    <option>Gas fitting</option>
+                    <option>Water treatment</option>
+                    <option>Septic system</option>
+                    <option>Geothermal heating</option>
+                    <option>Emergency service</option>
+                    <option>Something else</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="comments" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-lg" id="comments" name="comments" rows="5" placeholder="Tell us a bit about the job, and the best time to reach you." required></textarea>
+                </div>
+                <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 mt-4">
+                  <small class="text-muted"><span class="text-danger">*</span> Required. We never share your information.</small>
+                  <button class="btn btn-danger btn-lg px-5" type="submit">
+                    <i class="bi bi-send-fill me-2" aria-hidden="true"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
-
-
 
 <!--Contact ends-->
 
