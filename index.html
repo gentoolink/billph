@@ -421,7 +421,11 @@
 <div id="contact" class="container-fluid pt-5 px-4 bg-light">
     <div class="col-sm-12 slideanim">
       <h3><strong>Contact Us</strong></h3>
-      <form target="_blank" action="https://formsubmit.co/f33bdb8f75b4d4e6c2ca3098950e14b7" method="POST">
+      <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="d-none">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
         <div class="row">
           <div class="col-sm-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
